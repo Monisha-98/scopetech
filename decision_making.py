@@ -50,11 +50,11 @@ print("To display the marks based on grade")
 stu_mark=int(input("Enter a total mark:"))
 if stu_mark>90 and stu_mark<=100:
     print("A Grade")
-elif stu_mark>80 and stu_mark<=70:
+elif stu_mark>70 and stu_mark<=90:
     print("B Grade")
-elif stu_mark>60 and stu_mark<=50:
+elif stu_mark>50 and stu_mark<=70:
      print("C Grade")
-elif stu_mark>40 and stu_mark<=30:
+elif stu_mark>30 and stu_mark<=50:
     print("D Grade")
 else:
     print("fail")
@@ -82,9 +82,10 @@ else:
 #8 Write a program to check whether a character is an alphabet, digit, or special character
 print("To check the given character are alphabet,digit and special character")    
 a=input("Enter any character")
-if a.isalpha():
+if len(a) !=1:
+  if a.isalpha():
     print("is an alphabet")
-elif a.isdigit():
+  elif a.isdigit():
     print("is an digit")
 else:
     print("It is an special character")
@@ -95,11 +96,11 @@ n1=int(input("Enter a first number:"))
 n2=int(input("Enter a second number:"))
 n3=int(input("Enter a third number:"))
 if n1>n2 and n1>n3:
- print("First number is greater than second number")
+ print("First number is greater")
 elif n2>n1 and num2>n3:
-  print("second number is greater than third number")
+  print("second number is greater")
 else:  
-  print("The third number is largest number:")
+  print("The third number is greater")
 
 #10  Write a program to display a message based on temperature (e.g., Hot, Warm, Cool, Cold)
 print("Display message based on temperature")  
